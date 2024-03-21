@@ -1,0 +1,12 @@
+
+arrow functions
+	Son llamadas tambien funciones flecha
+	Son una forma más concisa de escribir funciones en JavaScript
+	Optimiza el codigo
+	No nesesita de la palabra reserbada function 
+
+
+callbacks
+	Son funciones que se pasan como argumentos a otras funciones 
+	Son fundamentales para trabajar con funciones asincronas como lectura de archivos
+

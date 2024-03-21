@@ -11,6 +11,9 @@
   /*Resultado esperado: [5, 10, 15, 20, 25] */
 
   /* First excercise */
+  const result = numbers.map(num => num * 5);
+//  console.log(result);
+
 
   /* Second excercise */
 
@@ -21,6 +24,10 @@
   /* Resultado esperado: ["Daniel", "Jhosep", "Rodrigo", "Veronica"] */
 
   /* Second excercise */
+  names.sort();
+//  console.log(names);
+
+
 
   /* Thrid excercise */
 
@@ -30,6 +37,9 @@
   /* Resultado esperado: ['a', 'b', 'z', 'r', 'c'] */
 
   /* Thrid excercise */
+
+  const filtrado = [...new Set(data)];
+  //console.log(filtrado);
 
   /* Fourth excercise */
 
@@ -48,7 +58,18 @@
       D: 1
     }
   */
+    const letterCount ={};
+    for (let i = 0; i < largeWord.length; i++) {
+      const letter = largeWord[i];
+      if (letterCount[letter]) {
+          letterCount[letter]++;
 
+      } else {
+          letterCount[letter] = 1;
+      }
+  }
+  
+//  console.log(letterCount);
   /* Fourth excercise */
 
 })();

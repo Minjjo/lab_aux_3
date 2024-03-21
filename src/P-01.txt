@@ -1,0 +1,70 @@
+-----------------------------------------------------------------------------------------
+.gitignore
+------------------------------------------------------------------------------------------
+
+dentro de este colocamos todo lo que no queremos que se queira subir en nuestro repositorio
+por ejempo:
+
+homework.js
+P-04.txt
+
+
+cuando agamos el git push, no se subira estos a nuestro repositorio
+--------------------------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------------------
+package.json
+------------------------------------------------------------------------------------------
+{
+  "name": "prueba",
+  "version": "0.0.1",
+  "description": "descripción",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node main.js",
+    "test": "mocha"
+  }
+}
+
+
+este es un pequeño ejemplo, que dice.
+name--> es el nombre de nuestro proyecto
+version ---> version de nuestro proyecto o paquete
+description ---> esta es una descripción que puede tener nuestro proyecto
+main --->Especifica el archivo que Node.js cargará automáticamente
+script ---> Es un objeto que te permite definir comandos personalizados que pueden ser ejecutados a través de npm 
+si colocamos npm run dev el proyecto se ejecuta en localhost
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+main.js
+-----------------------------------------------------------------------------------------
+Es punto de inicio comun y es la logica principal del proyecto
+ejemplo 
+
+import './styles.css';                                 -----------> Importamos estilos de css
+
+
+import { iniciarAplicacion } from './app';              -----------> Importamos modulos y componentes
+import { configurarEnrutamiento } from './router';      -----------> Importamos modulos y componentes
+import { inicializarEstadoGlobal } from './state';      -----------> Importamos modulos y componentes
+
+document.addEventListener('DOMContentLoaded', () => {   ------------> Iniciamos la aplicación
+  configurarEnrutamiento();
+  inicializarEstadoGlobal();
+  Inicio de la aplicación
+  iniciarAplicacion();
+                                                        --------------> se llama a funciones
+});
+
+
+
+
+
